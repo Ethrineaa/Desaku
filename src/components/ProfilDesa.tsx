@@ -6,7 +6,6 @@ import {
   FaBook,
   FaRoad,
   FaMountain,
-  FaCamera,
 } from "react-icons/fa";
 
 export default function ProfilDesa() {
@@ -56,7 +55,6 @@ export default function ProfilDesa() {
           <h2>Tentang Desa Sukamaju</h2>
           <p>Kenali lebih dekat keunggulan dan potensi desa kami</p>
         </div>
-
         <div className="profil-intro">
           <div className="profil-text">
             <h3>Desa Sukamaju - Rumah yang Penuh Makna</h3>
@@ -72,12 +70,15 @@ export default function ProfilDesa() {
             </p>
           </div>
           <div className="profil-image">
-            <div className="image-placeholder">
-              <FaCamera />
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+              alt="Pemandangan Desa Sukamaju"
+              className="profil-image-img"
+              loading="lazy"
+            />
           </div>
         </div>
-
+        ”
         <div className="features-grid">
           {features.map((feature, index) => (
             <div key={index} className="feature-card">

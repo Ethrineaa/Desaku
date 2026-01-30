@@ -1,1 +1,29 @@
 /* Profil Desa styles are included in the main styles file */
+
+.profil-intro{
+  display:flex;
+  gap:2rem;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.profil-image{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.profil-image-img{
+  width:100%;
+  max-width:520px;
+  height:320px;
+  object-fit:cover;
+  border-radius:8px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 800px){
+  .profil-intro{flex-direction:column-reverse;}
+  .profil-image-img{height:220px;max-width:100%;}
+}”
