@@ -1,8 +1,14 @@
-import LandingPage from './pages/LandingPage.tsx'
-import './App.css'
+import LandingPage from "./pages/LandingPage.tsx";
+import Chat from "./components/Chat.tsx";
+import "./App.css";
 
 function App() {
-  return <LandingPage />
+  return (
+    <>
+      <LandingPage />
+      <Chat />
+    </>
+  );
 }
 
-export default App
+export default App;
